@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Impressum • Zosya Trimbacher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#content">Zum Inhalt springen</a>
+  <header>
+    <h1>Impressum</h1>
+    <nav aria-label="Primäre Navigation">
+      <a href="index.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+      <a href="impressum.html" aria-current="page">Impressum</a>
+    </nav>
+  </header>
+
+  <main id="content">
+    <p><strong>Name:</strong> Zosya Trimbacher</p>
+    <p><strong>Anschrift:</strong> [Stadt, Land] <!-- keine Privatadresse nötig, siehe lokale Vorgaben --></p>
+    <p><strong>E-Mail:</strong> zosya (at) example (dot) com</p>
+    <!-- Falls vorhanden:
+    <p><strong>USt-IdNr.:</strong> [DE…]</p>
+    <p><strong>Registereintrag:</strong> [Handelsregister-Nr., Amtsgericht …]</p>
+    -->
+  </main>
+
+  <footer>
+    © <span id="y"></span> Zosya Trimbacher
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
