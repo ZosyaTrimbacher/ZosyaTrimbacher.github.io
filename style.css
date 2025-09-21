@@ -1,0 +1,42 @@
+/* Base */
+:root { --maxw: 820px; }
+* { box-sizing: border-box; }
+body {
+  font-family: system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  line-height: 1.6; margin: 0; color: #222; background:#fff;
+}
+a { color:#0a66c2; text-decoration: none; }
+a:hover, a:focus { text-decoration: underline; }
+img { max-width: 100%; height: auto; display: block; }
+
+/* Layout */
+header { background:#111; color:#fff; padding: 16px 12px; }
+header h1 { margin: 0 0 8px; font-size: 22px; }
+nav a { color:#fff; margin-right: 12px; }
+main, footer { max-width: var(--maxw); margin: 24px auto; padding: 0 16px; }
+h1, h2, h3 { line-height: 1.3; }
+button, .btn {
+  display:inline-block; padding:10px 14px; border:1px solid #111;
+  background:#111; color:#fff; border-radius:6px;
+}
+.btn--ghost { background:#fff; color:#111; }
+.grid {
+  display:grid; gap:16px; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+}
+
+/* Card for projects */
+.card {
+  border:1px solid #eee; border-radius:10px; overflow:hidden; background:#fafafa;
+}
+.card__body { padding:14px; }
+
+/* Figure zoom helper (open image in new tab) */
+.figure { margin:0; }
+.figure__caption { font-size: 14px; color:#555; }
+
+/* Footer */
+footer { font-size: 14px; color:#666; border-top:1px solid #eee; padding-top:16px; }
+
+/* Accessibility helpers */
+.skip { position: absolute; left:-9999px; }
+.skip:focus { left: 12px; top: 12px; background: #fffa; padding: 6px 10px; border-radius: 6px; }
