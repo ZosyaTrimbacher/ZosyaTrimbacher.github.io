@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Projects • Zosya Trimbacher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header>
+    <h1>Projects</h1>
+    <nav aria-label="Primary">
+      <a href="index.html">About</a>
+      <a href="projects.html" aria-current="page">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+      <a href="impressum.html">Impressum</a>
+    </nav>
+  </header>
+
+  <main id="content">
+    <p>Selected work from my CareerFoundry program. Each project links to its own case study page.</p>
+
+    <section class="grid" aria-label="Project list">
+      <!-- Project card 1 -->
+      <article class="card">
+        <a href="project1.html">
+          <img src="images/project1-hero.jpg" alt="Screenshot of Project 1 final design">
+        </a>
+        <div class="card__body">
+          <h2 style="margin-top:0;"><a href="project1.html">Project 1: [Project Title]</a></h2>
+          <p>Type: <strong>[UX / UI / Web Dev / Data]</strong> • Tools: <strong>[Figma / HTML/CSS / …]</strong></p>
+          <p><a class="btn btn--ghost" href="project1.html">View case study</a></p>
+        </div>
+      </article>
+
+      <!-- Add more cards later as you complete more projects -->
+    </section>
+  </main>
+
+  <footer>
+    © <span id="y"></span> Zosya Trimbacher • <a href="contact.html">Contact</a>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
