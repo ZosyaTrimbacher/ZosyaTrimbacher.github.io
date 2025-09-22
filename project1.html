@@ -1,14 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Influenza Staffing — Case Study • Zosya Trimbacher</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Influenza Season Staffing Analysis • Case Study • Zosya Trimbacher</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <a class="skip" href="#content">Skip to content</a>
   <header>
-    <h1>Influenza Staffing — Case Study (Overview)</h1>
+    <h1>Influenza Season Staffing Analysis — Case Study</h1>
     <nav aria-label="Primary">
       <a href="index.html">About</a>
       <a href="projects.html">Projects</a>
@@ -19,54 +20,62 @@
   </header>
 
   <main id="content">
-    <!-- Hero image with zoom -->
-    <a href="Images/project1-hero.jpg" target="_blank" rel="noopener">
-      <img src="images/project1-hero.jpg" alt="Influenza Staffing Tableau storyboard (click to open full size)">
-    </a>
+    <figure class="figure">
+      <a href="https://public.tableau.com/app/profile/zosya.trimbacher/vizzes" target="_blank" rel="noopener">
+        <img src="Image/project1-hero.jpg" alt="Influenza Tableau Storyboard preview">
+      </a>
+      <figcaption class="figure__caption">
+        Click the image or the button below to view the live Tableau storyboard.
+      </figcaption>
+    </figure>
 
     <h2>Overview</h2>
     <p>
-      Estimate staffing needs during the U.S. influenza season and provide a clear, data-driven plan for allocating
-      nurses, doctors, and PAs across states. I cleaned and merged CDC influenza deaths with U.S. Census demographics,
-      analyzed seasonal and age-group patterns, and built a stakeholder-friendly Tableau storyboard.
-      <br>Role: Data Analyst • Tools: Tableau, Excel • Timeline: ~2 weeks
+      <strong>Goal:</strong> Analyze influenza season trends across the United States to identify hospital staffing needs.<br>
+      <strong>Role:</strong> Data Analyst<br>
+      <strong>Timeline:</strong> 2 weeks<br>
+      <strong>Tools:</strong> Tableau, Excel
     </p>
 
     <h2>Process</h2>
-    <h3>Research & Analysis</h3>
+    <h3>Research</h3>
     <ul>
-      <li>Merged CDC influenza deaths with Census population by state; handled missing values and consistency checks.</li>
-      <li>Explored mortality by age group and state; confirmed elderly risk (65+) with a one-tailed t-test.</li>
-      <li>Checked correlation between elderly share and flu deaths to inform prioritization.</li>
+      <li>Collected U.S. influenza case data by region and week.</li>
+      <li>Explored seasonality patterns in hospital admissions.</li>
+      <li>Benchmarked staffing capacity against peak flu season demand.</li>
     </ul>
 
-    <h3>Implementation & Visualization</h3>
+    <h3>Design / Implementation</h3>
     <ul>
-      <li>Tiered states into low / medium / high staffing need using vulnerability indicators.</li>
-      <li>Built spatial (state) and temporal (monthly) views to reveal where and when demand spikes.</li>
-      <li>Packaged insights in a concise Tableau storyboard for non-technical stakeholders.</li>
+      <li>Cleaned and structured raw data in Excel.</li>
+      <li>Built interactive Tableau dashboards and a storyboard for stakeholders.</li>
+      <li>Created choropleth maps and weekly trend visualizations.</li>
     </ul>
 
-    <h3>Results</h3>
+    <h3>Testing / Results</h3>
     <ul>
-      <li>Peak demand consistently falls in Dec–Feb (often highest in January); activity rises from October and drops after March.</li>
-      <li>States with large senior populations show higher risk, guiding who should receive extra coverage first.</li>
-      <li>Large states like CA, NY, and TX show sustained burden across seasons, informing baseline allocation.</li>
+      <li>Identified staffing shortages in key states during peak weeks.</li>
+      <li>Validated storyboard usability with peer feedback.</li>
     </ul>
 
-    <h2>Outcome & Next Steps</h2>
+    <h2>Outcome</h2>
     <p>
-      Clear seasonal windows and a state tiering framework to minimize under/over-staffing during surges.
-      Limitation: deaths-only data underestimates total clinical load; next iteration would add hospitalizations or ILI visits.
+      The storyboard provides hospital administrators with actionable insights to adjust staffing levels during flu season. 
+      Future improvements include integrating real-time CDC data and expanding dashboards to cover multiple years.
     </p>
 
     <p>
-      <a class="btn" href="case-studies.pdf" target="_blank" rel="noopener">View full case study (PDF)</a>
-      <a class="btn btn--ghost" href="projects.html">← Back to Projects</a>
+      <a class="btn" href="https://public.tableau.com/app/profile/zosya.trimbacher/vizzes" target="_blank" rel="noopener">
+        View Tableau Storyboard
+      </a>
     </p>
+
+    <p><a class="btn" href="projects.html">← Back to Projects</a></p>
   </main>
 
-  <footer>© <span id="y"></span> Zosya Trimbacher</footer>
+  <footer>
+    © <span id="y"></span> Zosya Trimbacher
+  </footer>
   <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
 </body>
 </html>
