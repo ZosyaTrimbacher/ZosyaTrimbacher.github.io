@@ -19,23 +19,46 @@
   </header>
 
   <main id="content">
+    <!-- Hero image with zoom -->
     <a href="images/project1-hero.jpg" target="_blank" rel="noopener">
-      <img src="images/project1-hero.jpg" alt="Influenza Staffing storyboard (click to open full size)">
+      <img src="images/project1-hero.jpg" alt="Influenza Staffing Tableau storyboard (click to open full size)">
     </a>
 
     <h2>Overview</h2>
-    <p>Goal: Estimate staffing needs during U.S. influenza season and communicate a clear plan via a Tableau storyboard.</p>
-    <p>Role: Data Analyst • Tools: Tableau, Excel • Duration: ~2 weeks</p>
+    <p>
+      Estimate staffing needs during the U.S. influenza season and provide a clear, data-driven plan for allocating
+      nurses, doctors, and PAs across states. I cleaned and merged CDC influenza deaths with U.S. Census demographics,
+      analyzed seasonal and age-group patterns, and built a stakeholder-friendly Tableau storyboard.
+      <br>Role: Data Analyst • Tools: Tableau, Excel • Timeline: ~2 weeks
+    </p>
 
-    <h2>What I did</h2>
+    <h2>Process</h2>
+    <h3>Research & Analysis</h3>
     <ul>
-      <li>Cleaned and merged CDC influenza deaths with U.S. Census demographics.</li>
-      <li>Exploratory analysis by age group; one-tailed t-test to confirm elderly risk.</li>
-      <li>Tiered states by vulnerability; built spatial/temporal visuals in Tableau.</li>
+      <li>Merged CDC influenza deaths with Census population by state; handled missing values and consistency checks.</li>
+      <li>Explored mortality by age group and state; confirmed elderly risk (65+) with a one-tailed t-test.</li>
+      <li>Checked correlation between elderly share and flu deaths to inform prioritization.</li>
     </ul>
 
-    <h2>Outcome</h2>
-    <p>Actionable seasonal staffing windows (Dec–Feb peak) and high-need state tiers to guide allocation.</p>
+    <h3>Implementation & Visualization</h3>
+    <ul>
+      <li>Tiered states into low / medium / high staffing need using vulnerability indicators.</li>
+      <li>Built spatial (state) and temporal (monthly) views to reveal where and when demand spikes.</li>
+      <li>Packaged insights in a concise Tableau storyboard for non-technical stakeholders.</li>
+    </ul>
+
+    <h3>Results</h3>
+    <ul>
+      <li>Peak demand consistently falls in Dec–Feb (often highest in January); activity rises from October and drops after March.</li>
+      <li>States with large senior populations show higher risk, guiding who should receive extra coverage first.</li>
+      <li>Large states like CA, NY, and TX show sustained burden across seasons, informing baseline allocation.</li>
+    </ul>
+
+    <h2>Outcome & Next Steps</h2>
+    <p>
+      Clear seasonal windows and a state tiering framework to minimize under/over-staffing during surges.
+      Limitation: deaths-only data underestimates total clinical load; next iteration would add hospitalizations or ILI visits.
+    </p>
 
     <p>
       <a class="btn" href="case-studies.pdf" target="_blank" rel="noopener">View full case study (PDF)</a>
