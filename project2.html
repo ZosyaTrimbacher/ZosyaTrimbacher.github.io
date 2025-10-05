@@ -1,1 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Rockbuster Stealth — SQL & Tableau Case Study • Zosya Trimbacher</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <a class="skip" href="#content">Skip to content</a>
+  <header>
+    <h1>Rockbuster Stealth — SQL & Tableau Case Study</h1>
+    <nav aria-label="Primary">
+      <a href="index.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="resume.html">Resume</a>
+      <a href="contact.html">Contact</a>
+      <a href="impressum.html">Impressum</a>
+    </nav>
+  </header>
 
+  <main id="content">
+    <figure class="figure">
+      <img src="Images/project2-hero.jpg" alt="Bar chart of movie categories by revenue">
+      <figcaption class="figure__caption">Revenue by genre: Sports and Sci-Fi lead overall.</figcaption>
+    </figure>
+
+    <p><a class="btn btn--ghost" href="project2.pdf" target="_blank" rel="noopener">Download full case study (PDF)</a></p>
+
+    <h2>Overview</h2>
+    <p>Rockbuster Stealth is moving from DVD rentals to a global streaming platform. I used SQL to query the company’s database and Tableau/Excel to visualize findings that identify high-value markets, revenue-driving genres, and priority customer segments for the launch strategy.</p>
+    <p><strong>Role:</strong> Data Analyst • <strong>Tools:</strong> SQL (PostgreSQL), Tableau, Excel • <strong>Timeline:</strong> ~2 weeks</p>
+
+    <h2>Goal</h2>
+    <p>Support Rockbuster’s streaming rollout with data-driven guidance on <em>where</em> to launch first, <em>what</em> content to emphasize, and <em>which</em> customers to retain and grow.</p>
+
+    <h2>Process</h2>
+    <h3>Data & Queries</h3>
+    <ul>
+      <li>Joined core tables (payments, rentals, films, categories, customers, locations) to build revenue and usage views.</li>
+      <li>Applied CTEs/subqueries and window functions to rank countries, cities, films, and customers by revenue.</li>
+      <li>Aggregated by category to find top-grossing genres and to inform catalog priorities.</li>
+    </ul>
+
+    <h3>Analysis & Visualization</h3>
+    <ul>
+      <li>Built Tableau/Excel visuals for stakeholder consumption (genre revenue, top countries, customer value tiers).</li>
+      <li>Profiled high-value customers and identified loyalty opportunities.</li>
+    </ul>
+
+    <h2>Key Insights</h2>
+    <ul>
+      <li><strong>Genres:</strong> Sports and Sci-Fi are the top revenue drivers; Animation, Drama, and Comedy follow closely. :contentReference[oaicite:2]{index=2}</li>
+      <li><strong>Markets:</strong> India, China, and the U.S. lead in total revenue and are strong candidates for phased rollout. :contentReference[oaicite:3]{index=3}</li>
+      <li><strong>Customers:</strong> High-value segments rent more frequently and respond to targeted incentives. :contentReference[oaicite:4]{index=4}</li>
+    </ul>
+
+    <h2>Outcome</h2>
+    <p>Delivered a prioritized market list, genre focus for catalog acquisition, and loyalty tactics for top customers to improve early streaming ROI. :contentReference[oaicite:5]{index=5}</p>
+
+    <p><a class="btn" href="projects.html">← Back to Projects</a></p>
+  </main>
+
+  <footer>
+    © <span id="y"></span> Zosya Trimbacher
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+</body>
+</html>
