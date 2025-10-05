@@ -166,9 +166,10 @@ main .personal p{
 }
 
 .personal-img {
-  width: 320px;         /* ✅ Increased size */
-  height: 320px;        /* ✅ Forces consistent size */
-  object-fit: cover;    /* ✅ Crops evenly */
+  width: 320px;         
+  height: 320px;        
+  object-fit: cover;    
+  object-position: center bottom; /* ✅ Shift image to show skis */
   border-radius: 12px;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
   transition: transform 0.25s ease;
