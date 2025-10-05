@@ -68,76 +68,8 @@ footer {
   padding: 6px 10px;
   border-radius: 6px;
 }
-main .personal{
-  margin-top: 40px;
-  padding-top: 24px;
-  border-top: 1px solid #d0d0d0;
-  text-align: left !important;
-  max-width: none !important;   /* cancel any earlier 700px limit */
-}
 
-main .personal h2{
-  /* Match your normal h2 but keep lowercase */
-  text-transform: none !important;
-  margin: 0 0 12px 0;
-}
-
-main .personal p{
-  /* Match body text */
-  font-size: inherit;
-  line-height: inherit;
-  color: inherit;
-  text-align: left !important;
-  margin-top: 0;
-}
-/* === Personal section: match default main styles exactly === */
-main .personal{
-  margin: 40px 0;
-  padding-top: 24px;
-  border-top: 1px solid #d0d0d0; /* divider */
-  /* no width, no text-align here -> inherit from main */
-}
-
-/* Use the same h2 rules as elsewhere; only enforce lowercase text */
-main .personal h2{
-  text-transform: none !important; /* keep "personal note" lowercase */
-  margin: 0 0 12px 0;
-  /* no font-size here -> inherit the global h2 size */
-}
-
-/* Make paragraph typography identical to normal body copy */
-main .personal p{
-  font-size: inherit !important;
-  line-height: inherit !important;
-  color: inherit !important;
-  margin-top: 0;
-  text-align: inherit;
-}
-.personal-photos {
-  display: flex;
-  justify-content: flex-start;
-  align-items: flex-start;
-  gap: 24px; /* space between the two images */
-  margin: 24px 0 32px; /* space above and below image row */
-  flex-wrap: wrap;
-}
-
-.personal-photos a {
-  display: block;
-}
-
-.personal-img {
-  width: 48%;
-  max-width: 300px;
-  height: auto;
-  border-radius: 12px;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
-  transition: transform 0.25s ease;
-}
-
-.personal-img:hover {
-  transform: scale(1.03);
-}
+/* === Personal section === */
 .personal {
   margin: 60px 0;
   padding-top: 40px;
@@ -146,12 +78,14 @@ main .personal p{
 }
 
 .personal h2 {
-  font-size: 1.8rem; /* ✅ Match About Me heading size (or use the exact h2 size from your site) */
+  font-size: 1.5rem; /* ✅ matches About Me size */
+  font-weight: 600;  /* ✅ matches About Me weight */
   margin-bottom: 24px;
   text-transform: none;
   color: #1f3c34;
-  text-align: left; /* ✅ Align same as About Me */
+  text-align: left;
 }
+
 .personal-photos {
   display: flex;
   justify-content: center;
@@ -169,7 +103,7 @@ main .personal p{
   width: 320px;         
   height: 320px;        
   object-fit: cover;    
-  object-position: center bottom; /* ✅ Shift image to show skis */
+  object-position: center bottom; /* ✅ Show skis */
   border-radius: 12px;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.25);
   transition: transform 0.25s ease;
@@ -180,8 +114,8 @@ main .personal p{
 }
 
 .personal p {
-  font-size: 1.1rem;
-  line-height: 1.7;
+  font-size: 1rem; /* ✅ matches body text size */
+  line-height: 1.6;
   max-width: 720px;
   margin: 0 auto;
   color: #333;
