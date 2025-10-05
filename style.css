@@ -68,26 +68,25 @@ footer {
   padding: 6px 10px;
   border-radius: 6px;
 }
-.personal {
-  margin: 60px 0;
-  padding-top: 40px;
-  max-width: 700px;
-  text-align: left;
-  border-top: 1px solid #d0d0d0; /* subtle divider */
+main .personal{
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid #d0d0d0;
+  text-align: left !important;
+  max-width: none !important;   /* cancel any earlier 700px limit */
 }
 
-.personal h2 {
-  font-size: 1.8rem;
-  margin-bottom: 16px;
-  margin-top: 0;
-  color: #1f3c34; /* adjust to match your site’s accent color */
-  text-transform: none; /* keeps 'personal note' lowercase */
+main .personal h2{
+  /* Match your normal h2 but keep lowercase */
+  text-transform: none !important;
+  margin: 0 0 12px 0;
 }
 
-.personal p {
-  font-size: 1.1rem;
-  line-height: 1.6;
-  color: #333;
-  text-align: left;
+main .personal p{
+  /* Match body text */
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+  text-align: left !important;
   margin-top: 0;
 }
