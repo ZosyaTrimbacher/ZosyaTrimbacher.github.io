@@ -113,3 +113,28 @@ main .personal p{
   margin-top: 0;
   text-align: inherit;
 }
+.personal-photos {
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-start;
+  gap: 24px; /* space between the two images */
+  margin: 24px 0 32px; /* space above and below image row */
+  flex-wrap: wrap;
+}
+
+.personal-photos a {
+  display: block;
+}
+
+.personal-img {
+  width: 48%;
+  max-width: 300px;
+  height: auto;
+  border-radius: 12px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transition: transform 0.25s ease;
+}
+
+.personal-img:hover {
+  transform: scale(1.03);
+}
