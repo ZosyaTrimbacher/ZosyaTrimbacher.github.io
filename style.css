@@ -6,7 +6,7 @@ body {
   line-height: 1.6;
   margin: 0;
   color: #222;
-  background: #f7f9f8; /* soft gray-green background */
+  background: #f7f9f8;
 }
 a { color:#2d4a3f; text-decoration: none; }
 a:hover, a:focus { text-decoration: underline; }
@@ -14,14 +14,21 @@ img { max-width: 100%; height: auto; display: block; }
 
 /* Layout */
 header {
-  background:#d7e2dd; /* light green header */
+  background:#d7e2dd;
   color:#2d4a3f;
   padding: 16px 12px;
 }
 header h1 { margin: 0 0 8px; font-size: 22px; color:#2d4a3f; }
 nav a { color:#2d4a3f; margin-right: 12px; }
 main, footer { max-width: var(--maxw); margin: 24px auto; padding: 0 16px; }
-h1, h2, h3 { line-height: 1.3; color:#2d4a3f; }
+
+/* Global headings in content (makes ALL section titles match) */
+main h1, main h2, main h3 { line-height: 1.3; color:#2d4a3f; }
+main h2 {
+  font-size: 1.5rem;   /* ← set once for ALL section headings */
+  font-weight: 600;    /* boldness matches About me */
+  margin: 0 0 16px;    /* consistent spacing under headings */
+}
 
 /* Buttons */
 button, .btn {
@@ -72,51 +79,47 @@ footer {
 
 /* === Personal section === */
 .personal {
-  margin: 48px 0;            /* a bit tighter than before */
-  padding-top: 16px;         /* less space above the heading */
+  margin: 40px 0;          /* a bit tighter overall */
+  padding-top: 12px;       /* less space above the heading */
   border-top: 1px solid #d0d0d0;
-  text-align: left;          /* ensure text is left-aligned */
+  text-align: left;        /* ensure text is left-aligned */
 }
 
+/* personal heading: inherit global main h2 exactly */
 .personal h2 {
-  /* Match About me exactly by inheriting global h2 */
-  font-size: inherit;
-  font-weight: inherit;
-  margin: 8px 0 16px;        /* small gap below the line, then heading */
-  text-transform: none;
-  color: #1f3c34;
+  text-transform: none;    /* keep “On a personal note” as typed */
+  margin: 6px 0 16px;      /* small gap after the divider then heading */
   text-align: left;
 }
 
+/* Photos row */
 .personal-photos {
   display: flex;
-  justify-content: center;   /* photos centered */
+  justify-content: center; /* center images only */
   align-items: center;
   gap: 32px;
-  margin: 24px 0 24px;       /* tidy space above and below the photos */
+  margin: 20px 0 20px;
   flex-wrap: wrap;
 }
-
 .personal-photos a { display: block; }
 
 .personal-img {
   width: 320px;
   height: 320px;
   object-fit: cover;
-  object-position: center bottom;  /* show the skis in the crop */
+  object-position: center bottom;  /* show skis */
   border-radius: 12px;
   box-shadow: 0 3px 8px rgba(0,0,0,0.25);
   transition: transform 0.25s ease;
 }
-
 .personal-img:hover { transform: scale(1.04); }
 
-/* Personal paragraph: left, not centered, no auto margins */
+/* Personal paragraph — left, not centered */
 .personal p {
   font-size: 1rem;
   line-height: 1.6;
   color: #333;
-  max-width: none;           /* don't constrain/center the block */
-  margin: 0;                 /* remove auto-centering */
-  text-align: left;          /* force left */
+  max-width: none;   /* no centered block constraint */
+  margin: 0;         /* no auto-centering */
+  text-align: left;  /* force left */
 }
