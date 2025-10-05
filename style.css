@@ -146,7 +146,7 @@ main .personal p{
 }
 
 .personal h2 {
-  font-size: 2rem;
+  font-size: inherit; /* ✅ uses the same size as About Me */
   margin-bottom: 24px;
   text-transform: none;
   color: #1f3c34;
