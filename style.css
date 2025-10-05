@@ -146,12 +146,12 @@ main .personal p{
 }
 
 .personal h2 {
-  font-size: inherit; /* ✅ uses the same size as About Me */
+  font-size: 1.8rem; /* ✅ Match About Me heading size (or use the exact h2 size from your site) */
   margin-bottom: 24px;
   text-transform: none;
   color: #1f3c34;
+  text-align: left; /* ✅ Align same as About Me */
 }
-
 .personal-photos {
   display: flex;
   justify-content: center;
