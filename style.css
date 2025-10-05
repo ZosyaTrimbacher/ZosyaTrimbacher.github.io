@@ -123,3 +123,17 @@ footer {
   margin: 0;         /* no auto-centering */
   text-align: left;  /* force left */
 }
+
+.skills p {
+  position: relative;
+  padding-left: 1.2rem;
+  margin: 0.4em 0;
+}
+
+.skills p:not(:first-child)::before {
+  content: "•";             /* bullet */
+  position: absolute;
+  left: 0;
+  color: #2d4a3f;           /* optional: match your site color */
+  font-weight: bold;
+}
