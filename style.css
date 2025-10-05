@@ -137,3 +137,9 @@ footer {
   color: #2d4a3f;           /* optional: match your site color */
   font-weight: bold;
 }
+
+p:first-child {
+  text-align: left;
+  margin-left: 0;
+  padding-left: 0;
+}
