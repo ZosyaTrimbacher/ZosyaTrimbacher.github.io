@@ -21,48 +21,46 @@
   <main id="content">
     <figure class="figure">
       <img src="Images/project3-hero.jpg" alt="Bar chart of loyalty spending by customer type">
-      <figcaption class="figure__caption">Loyal vs new vs regular customers by spend band.</figcaption>
+      <figcaption class="figure__caption">Loyal vs new vs regular customers by spending tier.</figcaption>
     </figure>
 
     <p><a class="btn btn--ghost" href="project3.pdf" target="_blank" rel="noopener">Download full case study (PDF)</a></p>
 
     <h2>Overview</h2>
-    <p>For Instacart, I analyzed purchase behavior and built customer segments to improve retention and targeting. The work covers data cleaning and feature engineering, behavioral profiling, and visualization of spend, timing, and product preferences.</p>
-    <p><strong>Role:</strong> Data Analyst • <strong>Tools:</strong> Python, Excel, Tableau • <strong>Timeline:</strong> ~2 weeks</p>
-
-    <h2>Goal</h2>
-    <p>Enable more effective marketing and loyalty programs by understanding when customers buy, what they buy, and which segments drive value.</p>
+    <p><strong>Goal:</strong> Segment Instacart customers and surface behaviors that improve retention, campaign targeting, and lifetime value.</p>
+    <p><strong>Role:</strong> Data Analyst</p>
+    <p><strong>Timeline:</strong> 2 weeks</p>
+    <p><strong>Tools:</strong> Python, Excel, Tableau</p>
 
     <h2>Process</h2>
-    <h3>Data Preparation</h3>
+
+    <h3>Research</h3>
     <ul>
-      <li>Imported, cleaned, and merged large Instacart datasets; handled duplicates, missing values, and mixed types. :contentReference[oaicite:6]{index=6}</li>
-      <li>Engineered features (loyalty flag, spend tiers, segment profiles) used throughout the analysis. :contentReference[oaicite:7]{index=7}</li>
+      <li>Investigated order timing, spend patterns, and department preferences.</li>
+      <li>Compared loyal, new, and regular cohorts to quantify value drivers.</li>
     </ul>
 
-    <h3>Behavioral Analysis</h3>
+    <h3>Design / Implementation</h3>
     <ul>
-      <li>Identified peak spend times (early morning 4–5 a.m. and evening 8–10 p.m.) and higher weekend pricing. :contentReference[oaicite:8]{index=8}</li>
-      <li>Profiled product demand—Produce, Dairy & Eggs, Snacks among top categories. :contentReference[oaicite:9]{index=9}</li>
-      <li>Segmented customers (loyal, new, regular) and compared spend distributions. :contentReference[oaicite:10]{index=10}</li>
+      <li>Cleaned and merged large Instacart datasets; resolved missing values and duplicates.</li>
+      <li>Engineered features (loyalty flags, spend tiers) and aggregated KPIs per segment.</li>
+      <li>Built dashboards to visualize behavioral patterns and customer profiles.</li>
     </ul>
 
-    <h2>Key Insights</h2>
+    <h3>Testing / Results</h3>
     <ul>
-      <li>Regular customers are the largest cohort; loyal customers contribute disproportionately to value. :contentReference[oaicite:11]{index=11}</li>
-      <li>Spending spikes in the early morning and late evening—prime windows for promotion. :contentReference[oaicite:12]{index=12}</li>
-      <li>Top departments suggest where to focus category promotions and bundles. :contentReference[oaicite:13]{index=13}</li>
+      <li>Spending spikes during early mornings (4–5 a.m.) and evenings (8–10 p.m.); weekends showed higher pricing.</li>
+      <li>Top departments: Produce, Dairy & Eggs, and Snacks.</li>
+      <li>Regular customers form the largest cohort, while loyal customers drive a disproportionate share of revenue.</li>
     </ul>
 
     <h2>Outcome</h2>
-    <p>Recommendations covered timing-based promotions, loyalty upgrades for regular customers, segment-specific bundles, and category-focused marketing to lift retention and LTV. :contentReference[oaicite:14]{index=14}</p>
+    <p>Recommended timing-based promotions, loyalty upgrades for regular customers, and category-focused campaigns to lift retention and LTV.</p>
 
     <p><a class="btn" href="projects.html">← Back to Projects</a></p>
   </main>
 
-  <footer>
-    © <span id="y"></span> Zosya Trimbacher
-  </footer>
+  <footer>© <span id="y"></span> Zosya Trimbacher</footer>
   <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
 </body>
 </html>
