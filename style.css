@@ -90,3 +90,26 @@ main .personal p{
   text-align: left !important;
   margin-top: 0;
 }
+/* === Personal section: match default main styles exactly === */
+main .personal{
+  margin: 40px 0;
+  padding-top: 24px;
+  border-top: 1px solid #d0d0d0; /* divider */
+  /* no width, no text-align here -> inherit from main */
+}
+
+/* Use the same h2 rules as elsewhere; only enforce lowercase text */
+main .personal h2{
+  text-transform: none !important; /* keep "personal note" lowercase */
+  margin: 0 0 12px 0;
+  /* no font-size here -> inherit the global h2 size */
+}
+
+/* Make paragraph typography identical to normal body copy */
+main .personal p{
+  font-size: inherit !important;
+  line-height: inherit !important;
+  color: inherit !important;
+  margin-top: 0;
+  text-align: inherit;
+}
