@@ -70,15 +70,18 @@ footer {
 }
 .personal {
   margin: 60px 0;
+  padding-top: 40px;
   max-width: 700px;
   text-align: left;
+  border-top: 1px solid #d0d0d0; /* subtle divider */
 }
 
 .personal h2 {
   font-size: 1.8rem;
   margin-bottom: 16px;
-  color: #1f3c34; /* or whatever your heading color is */
-  text-transform: none; /* ensures "personal note" stays lowercase */
+  margin-top: 0;
+  color: #1f3c34; /* adjust to match your site’s accent color */
+  text-transform: none; /* keeps 'personal note' lowercase */
 }
 
 .personal p {
@@ -86,4 +89,5 @@ footer {
   line-height: 1.6;
   color: #333;
   text-align: left;
+  margin-top: 0;
 }
