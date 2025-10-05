@@ -68,3 +68,20 @@ footer {
   padding: 6px 10px;
   border-radius: 6px;
 }
+.personal {
+  margin: 60px auto;
+  max-width: 700px;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.personal h2 {
+  font-size: 1.8rem;
+  margin-bottom: 16px;
+  color: #1f3c34; /* dark green (optional, match your site color) */
+}
+
+.personal p {
+  font-size: 1.1rem;
+  color: #333;
+}
