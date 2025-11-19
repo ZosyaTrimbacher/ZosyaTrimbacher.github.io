@@ -4,7 +4,29 @@
   <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Resume • Zosya Trimbacher</title>
   <link rel="stylesheet" href="style.css">
+
+  <!-- PDF embed mobile-friendly styling -->
+  <style>
+    .resume-embed iframe {
+      width: 100%;
+      height: 900px;
+      border: 1px solid #ccc;
+    }
+
+    @media (max-width: 768px) {
+      .resume-embed iframe {
+        height: 600px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .resume-embed iframe {
+        height: 500px;
+      }
+    }
+  </style>
 </head>
+
 <body>
   <a class="skip" href="#content">Skip to content</a>
   <header>
@@ -19,11 +41,24 @@
   </header>
 
   <main id="content">
-    <p><a class="btn" href="resume.pdf" download>Download my resume (PDF)</a></p>
-    <!-- Removed the Tip line to tidy up the page -->
+    <p>
+      <a class="btn" href="resume.pdf" download>Download my resume (PDF)</a>
+    </p>
+
+    <!-- Embedded Resume Preview -->
+    <div class="resume-embed" style="margin-top: 2rem;">
+      <iframe
+        src="resume.pdf#view=FitH"
+        title="Zosya Trimbacher – Resume"
+        width="100%"
+        height="900"
+      ></iframe>
+    </div>
   </main>
 
   <footer>© <span id="y"></span> Zosya Trimbacher</footer>
-  <script>document.getElementById('y').textContent = new Date().getFullYear()</script>
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
 </body>
 </html>
